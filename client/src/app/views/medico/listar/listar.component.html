@@ -12,9 +12,9 @@
         <td mat-cell *matCellDef="let medico"> {{medico.CRM}} </td>
     </ng-container>
     <ng-container matColumnDef="especialidade">
-        <th mat-header-cell *matHeaderCellDef> Nome </th>
+        <th mat-header-cell *matHeaderCellDef> Especialidade </th>
         <td mat-cell *matCellDef="let medico"> {{medico.especialidade}} </td>
     </ng-container>
-    <tr mat-header-row *matHeaderRowDef="medicoColum"></tr>
-    <tr mat-row *matRowDef="let row; columns: medicoColum;"></tr>
+    <tr mat-header-row *matHeaderRowDef="medicoColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: medicoColumns;"></tr>
 </table>

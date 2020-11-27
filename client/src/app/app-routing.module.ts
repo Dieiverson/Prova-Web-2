@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CadastrarComponent } from './views/medico/cadastrar/cadastrar.component';
+import { ListarComponent } from './views/medico/listar/listar.component';
 
 const routes: Routes = [
   {
     path:'',
     component:CadastrarComponent
   }, 
+  {
+    path:'list',
+    component:ListarComponent
+  }
 ];
 
 @NgModule({

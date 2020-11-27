@@ -14,5 +14,8 @@ export class MedicoService {
   cadastrar(medico: Medico): Observable<Medico>{
     return this.http.post<Medico>(this.BASEURL+"medico/cadastrar",medico);
   }
+  ObterTodos(): Observable<Medico[]>{
+    return this.http.get<Medico[]>(this.BASEURL+"medico/listar");
+  }
 
 }

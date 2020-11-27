@@ -1,6 +1,6 @@
 export class Medico
 {
-    id?: string;
+    _id?: string;
     nome: string; 
     crm: string;
     especialidade:string;

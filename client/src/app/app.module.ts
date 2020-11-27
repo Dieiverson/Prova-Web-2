@@ -10,6 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { FormsModule }   from '@angular/forms';
 import {HttpClientModule } from'@angular/common/http';
 import { ListarComponent } from './views/medico/listar/listar.component';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ListarComponent } from './views/medico/listar/listar.component';
     MatInputModule,
     FormsModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
