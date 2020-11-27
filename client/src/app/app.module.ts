@@ -9,11 +9,13 @@ import { CadastrarComponent } from './views/medico/cadastrar/cadastrar.component
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule }   from '@angular/forms';
 import {HttpClientModule } from'@angular/common/http';
+import { ListarComponent } from './views/medico/listar/listar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CadastrarComponent
+    CadastrarComponent,
+    ListarComponent
   ],
   imports: [
     BrowserModule,
