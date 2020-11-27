@@ -9,7 +9,7 @@ const routes: Routes = [
     component:CadastrarComponent
   }, 
   {
-    path:'list',
+    path:'Obter',
     component:ListarComponent
   }
 ];

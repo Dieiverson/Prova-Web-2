@@ -21,5 +21,8 @@ export class ListarComponent implements OnInit {
       this.medicosTable = new MatTableDataSource<Medico>(medicoList);       
     });  
   }
+  navigateCadastro():void{
+    this.router.navigate(['']);
+  }
 
 }

@@ -29,5 +29,8 @@ export class CadastrarComponent implements OnInit {
       console.log(medico);
     }); 
   }
+  navigateList():void{
+    this.router.navigate(['/Obter']);
+  }
 
 }
