@@ -10,6 +10,8 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const routes = require('./routes.js');
+const cors = require('cors');
+app.use(cors());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 //Configurar conversão das informações que chegam em uma requisição
