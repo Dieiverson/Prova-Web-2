@@ -17,7 +17,6 @@ export class CadastrarComponent implements OnInit {
     MedicoService, private route: ActivatedRoute, private router: Router) { }
   medico: Medico = new Medico();
 
-
   ngOnInit(): void {
     
   }
@@ -26,6 +25,9 @@ export class CadastrarComponent implements OnInit {
     this.medico.especialidade = this.especialidade;
     this.medico.nome = this.nome;
     this.service.cadastrar(this.medico).subscribe((medico)=>{
+      if(medico == null)
+        console.log("erro ao cadastrar");
+        else
       console.log(medico);
     }); 
   }

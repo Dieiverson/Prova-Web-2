@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.input-field {
+    display: block;
+}
+
+.content {
+    width: 30%;
+    display: table;
+    margin: auto;
+}
+
+body {
+    background-color: skyblue !important;
+}
+
+.btnNavigate {
+    bottom: 0;
+    right: 0;
+    padding-right: 20px;
+}

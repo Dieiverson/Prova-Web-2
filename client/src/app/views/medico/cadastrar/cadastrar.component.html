@@ -1,15 +1,23 @@
-<mat-form-field class="input-field">
-    <mat-label>Nome</mat-label>
-    <input matInput name="inputName" [(ngModel)]="nome" />
-</mat-form-field>
+<body>
 
-<mat-form-field class="input-field">
-    <mat-label>CRM</mat-label>
-    <input matInput name="inputCrm" [(ngModel)]="crm" />
-</mat-form-field>
-<mat-form-field class="input-field">
-    <mat-label>Especialidade</mat-label>
-    <input matInput name="inputEspecialidade" [(ngModel)]="especialidade" />
-</mat-form-field>
-<button (click)="create()" mat-raised-button color="primary">Cadastrar</button>
-<button (click)="navigateList()" mat-raised-button color="primary">Cadastrar</button>
+
+    <h1>Cadastro de médico</h1>
+    <div class="content">
+        <mat-form-field class="input-field">
+            <mat-label>Nome</mat-label>
+            <input matInput name="inputName" [(ngModel)]="nome" />
+        </mat-form-field>
+
+        <mat-form-field class="input-field">
+            <mat-label>CRM</mat-label>
+            <input matInput name="inputCrm" [(ngModel)]="crm" />
+        </mat-form-field>
+        <mat-form-field class="input-field">
+            <mat-label>Especialidade</mat-label>
+            <input matInput name="inputEspecialidade" [(ngModel)]="especialidade" />
+        </mat-form-field>
+        <button (click)="create()" mat-raised-button color="primary">Cadastrar</button>
+    </div>
+
+    <button class="btnNavigate" (click)="navigateList()" mat-raised-button color="primary">Ir para Listagem</button>
+</body>
